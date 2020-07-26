@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "node server.js",
     "test": "jest --verbose test/*"
   },
   "repository": {
