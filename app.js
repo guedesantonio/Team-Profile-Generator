@@ -51,12 +51,36 @@ function createManager() {
   });
 }
 
-  const app = http.createServer(promptUser);
+function addMember() {
+    return inquirer.prompt([
+        {
+            type: "list",
+            name: "memberType",
+            message: "Which type of team member would you like to add?",
+            choices: [
+                "Engineer",
+                "Intern",
+                "I don't want to add any more team members."
+            ]
+        }
+    ])
+    .then((res) => {
+        switch (res.memberType) {
+            case "Engineer":
+              createEngineer();
+              break;
+            case "Intern":
+              createIntern();
+              break;
+            default:
+              generateRoster();
+          }
+        }
 
-  app.listen(PORT, () => {
-    console.log("App listening on PORT " + PORT);
-  });
+    );
+}
 
+  
 
   createManager();
 
