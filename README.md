@@ -4,8 +4,8 @@
 ![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Description
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare tellus nec lacus efficitur vehicula. Vivamus finibus lectus lacus. Nam faucibus, lectus non laoreet consequat, quam magna sodales ligula, non iaculis magna orci in sem. Morbi vitae nulla egestas, molestie justo et, ullamcorper massa. Curabitur at sapien tellus. Sed lobortis sapien id ipsum porta scelerisque. Nam bibendum euismod odio, eu laoreet arcu vulputate non. Etiam dictum ante quis dolor lacinia, at bibendum urna ornare. Fusce eu facilisis lacus. In nisl lorem, euismod in facilisis ac, bibendum sed arcu. Quisque placerat lorem quis nulla gravida auctor. Sed volutpat arcu in dolor semper, a fringilla urna euismod.
-
+  A Node CLI tested application that prompts the user about his team information and generates an reposnsive HTML webpage that displays summaries for team member.
+  
   ## Table of contents
   
   * [Installation](#installation)
@@ -14,23 +14,44 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+  * [Screenshots](#screenshots)
 
   ## Installation
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare tellus nec lacus efficitur vehicula. Vivamus finibus lectus lacus. Nam faucibus, lectus non laoreet consequat, quam magna sodales ligula, non iaculis magna orci in sem. Morbi vitae nulla egestas, molestie justo et, ullamcorper massa. Curabitur at sapien tellus. Sed lobortis sapien id ipsum porta scelerisque. Nam bibendum euismod odio, eu laoreet arcu vulputate non. Etiam dictum ante quis dolor lacinia, at bibendum urna ornare. Fusce eu facilisis lacus. In nisl lorem, euismod in facilisis ac, bibendum sed arcu. Quisque placerat lorem quis nulla gravida auctor. Sed volutpat arcu in dolor semper, a fringilla urna euismod.
+  The user needs to run:
+  ```
+  npm install
+  ```
+  in the command line in order to install the required dependencies for this app on your system. In order to run this app please type in the command line and execute:
+  ```
+  node app.js
+  ```
 
   ## Usage
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare tellus nec lacus efficitur vehicula. Vivamus finibus lectus lacus. Nam faucibus, lectus non laoreet consequat, quam magna sodales ligula, non iaculis magna orci in sem. Morbi vitae nulla egestas, molestie justo et, ullamcorper massa. Curabitur at sapien tellus. Sed lobortis sapien id ipsum porta scelerisque. Nam bibendum euismod odio, eu laoreet arcu vulputate non. Etiam dictum ante quis dolor lacinia, at bibendum urna ornare. Fusce eu facilisis lacus. In nisl lorem, euismod in facilisis ac, bibendum sed arcu. Quisque placerat lorem quis nulla gravida auctor. Sed volutpat arcu in dolor semper, a fringilla urna euismod.
+  The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members. This assignment must also pass all unit tests. When the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user.
+
+  ![inquirer](./assets/inquirer.png)
+
+  Please click [here] (https://drive.google.com/file/d/1KQnTliIxf2PLpnME1_WLn7zAExDcEONh/view) to see the functionality of this app.
 
   ## License
-  This application uses Apache License 2.0
+  This project is licensed under the MIT.
 
   ## Contributing
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare tellus nec lacus efficitur vehicula. Vivamus finibus lectus lacus. Nam faucibus, lectus non laoreet consequat, quam magna sodales ligula, non iaculis magna orci in sem. Morbi vitae nulla egestas, molestie justo et, ullamcorper massa. Curabitur at sapien tellus. Sed lobortis sapien id ipsum porta scelerisque. Nam bibendum euismod odio, eu laoreet arcu vulputate non. Etiam dictum ante quis dolor lacinia, at bibendum urna ornare. Fusce eu facilisis lacus. In nisl lorem, euismod in facilisis ac, bibendum sed arcu. Quisque placerat lorem quis nulla gravida auctor. Sed volutpat arcu in dolor semper, a fringilla urna euismod.
+  See [Questions](#Questions) section.
 
-  ## tests
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare tellus nec lacus efficitur vehicula. Vivamus finibus lectus lacus. Nam faucibus, lectus non laoreet consequat, quam magna sodales ligula, non iaculis magna orci in sem. Morbi vitae nulla egestas, molestie justo et, ullamcorper massa. Curabitur at sapien tellus. Sed lobortis sapien id ipsum porta scelerisque. Nam bibendum euismod odio, eu laoreet arcu vulputate non. Etiam dictum ante quis dolor lacinia, at bibendum urna ornare. Fusce eu facilisis lacus. In nisl lorem, euismod in facilisis ac, bibendum sed arcu. Quisque placerat lorem quis nulla gravida auctor. Sed volutpat arcu in dolor semper, a fringilla urna euismod.
+  ## Tests
+  To run tests, run the following command:
+
+  ```
+  npm run test
+  ```
+
+  ![test](./assets/test.png)
 
   ## Questions
   If you have any questions about the repo, open an issue or contact me directly at gguedesantonio@gmail.com. 
   You can find more about my work at [Github profile](https://github.com/guedesantonio). 
 
+  ## Screenshots
+
+  ![html_screenshot](./assets/ss.png)
