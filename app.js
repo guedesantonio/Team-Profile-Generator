@@ -11,7 +11,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 function generateRoster() {
-    // Synchronously check, using node.js, if a file or directory exists.
+    // Synchronously check if a file||directory exists.
     if (!fs.existsSync(OUTPUT_DIR)) {
       fs.mkdirSync(OUTPUT_DIR);
     }
