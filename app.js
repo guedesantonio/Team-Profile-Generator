@@ -115,7 +115,6 @@ function createEngineer() {
         type: "input",
         name: "github",
         message: "What is your engineer's GitHub username?",
-        validate: (value) => !isNaN(value) || "Please enter a number.",
       }
     ])
   .then((res) => {
@@ -153,7 +152,6 @@ function createIntern() {
         type: "input",
         name: "school",
         message: "What is your intern's school?",
-        validate: (value) => !isNaN(value) || "Please enter a number.",
       }
     ])
   .then((res) => {
