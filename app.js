@@ -5,8 +5,19 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
+// generating team.html
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
+const render = require("./lib/htmlRenderer");
+
+function generateRoster() {
+    // Synchronously check, using node.js, if a file or directory exists.
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR);
+    }
+    fs.writeFileSync(outputPath, render(team), "utf-8");
+  }
+  
 
 // An array containing all members information
 
