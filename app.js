@@ -51,6 +51,7 @@ function createManager() {
   });
 }
 
+// prompt user about adding a member
 function addMember() {
     return inquirer.prompt([
         {
@@ -80,6 +81,7 @@ function addMember() {
     );
 }
 
+// prompt user about new engineer
 function createEngineer() {
     return inquirer.prompt([
       {
@@ -113,6 +115,44 @@ function createEngineer() {
       res.github
     );
     team.push(engineer);
+    addMember();
+  });
+}  
+
+// prompt user about new intern
+function createIntern() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "What is your intern's name?"
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "What is your intern's ID?",
+        validate: (value) => !isNaN(value) || "Please enter a number.",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is your intern's email?"
+      },
+      {
+        type: "input",
+        name: "school",
+        message: "What is your intern's school?",
+        validate: (value) => !isNaN(value) || "Please enter a number.",
+      }
+    ])
+  .then((res) => {
+    const intern = new Intern(
+      res.name,
+      res.id,
+      res.email,
+      res.school
+    );
+    team.push(intern);
     addMember();
   });
 }  
