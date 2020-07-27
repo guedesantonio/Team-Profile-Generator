@@ -12,6 +12,44 @@ const render = require("./lib/htmlRenderer");
 
 var PORT = process.env.PORT || 3001;
 
+function promptUser() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "managerName",
+        message: "What is your manager's name?"
+      },
+      {
+        type: "input",
+        name: "managerID",
+        message: "What is your manager's ID?"
+      },
+      {
+        type: "input",
+        name: "managerEmail",
+        message: "What is your manager's email?"
+      },
+      {
+        type: "input",
+        name: "managerOffice",
+        message: "What is your manager's office number?"
+      },
+      {
+      type: "list",
+      message: "Which type of member do you like to add?",
+      name: "addMember",
+      choices: [
+        'Engineer', 'Intern', "I don't want to add any more team members",
+      ]
+      }
+    ]);
+  }
+
+  const app = http.createServer(promptUser);
+
+  app.listen(PORT, () => {
+    console.log("App listening on PORT " + PORT);
+  });
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
