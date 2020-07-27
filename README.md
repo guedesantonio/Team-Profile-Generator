@@ -29,7 +29,7 @@
   ## Usage
   The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members. This assignment must also pass all unit tests. When the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user.
 
-  ![inquirer](./assets/inquirer.png)
+  ![inquirer](./Assets/inquirer.png)
 
   Please click [here] (https://drive.google.com/file/d/1KQnTliIxf2PLpnME1_WLn7zAExDcEONh/view) to see the functionality of this app.
 
@@ -46,7 +46,7 @@
   npm run test
   ```
 
-  ![test](./assets/test.png)
+  ![test](./Assets/test.png)
 
   ## Questions
   If you have any questions about the repo, open an issue or contact me directly at gguedesantonio@gmail.com. 
@@ -54,4 +54,4 @@
 
   ## Screenshots
 
-  ![html_screenshot](./assets/ss.png)
+  ![html_screenshot](./Assets/ss.png)
