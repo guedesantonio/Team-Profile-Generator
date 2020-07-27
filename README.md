@@ -31,7 +31,7 @@
 
   ![inquirer](./Assets/inquirer.png)
 
-  Please click [here] (https://drive.google.com/file/d/1KQnTliIxf2PLpnME1_WLn7zAExDcEONh/view) to see the functionality of this app.
+  Please click [here](https://drive.google.com/file/d/1KQnTliIxf2PLpnME1_WLn7zAExDcEONh/view) to see the functionality of this app.
 
   ## License
   This project is licensed under the MIT.
